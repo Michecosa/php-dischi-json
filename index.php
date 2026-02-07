@@ -1,7 +1,7 @@
   <?php
   $json_string = file_get_contents(__DIR__ . '/albums.json');
   $albums = json_decode($json_string, true);
-  var_dump($albums);
+  # var_dump($albums);
   ?>
   <!DOCTYPE html>
   <html lang="en">
@@ -14,19 +14,25 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-      <h1>Albums</h1>
-      <div class="row gap-1">
-        <div class="card pt-3" style="width: 18rem;">
-          <img src="<?php echo $albums[0]['url_cover'] ?>" class="card-img-top" alt="<?php echo $albums[0]['titolo']?>">
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $albums[0]['titolo'] ?></h5>
-            <p class="card-text"><?php echo $albums[0]['artista'] ?></p>
-          </div>
-          <div class="card-body">
-            <p class="card-text"><?php echo $albums[0]['anno_pubblicazione'] ?></p>
-            <p class="card-text"><?php echo $albums[0]['genere'] ?></p>
-          </div>
+    <div class="container">
+      <h1 class="text-center m-4">Albums</h1>
+      <div class="d-flex justify-content-center">
+        <div class="row g-4 justify-content-center">
+          <?php
+          foreach ($albums as $album) {
+            echo '<div class="card pt-3 mx-2 col-12 col-md-5 col-lg-3">';
+            echo '<img src=' . $album['url_cover'] . '" class="card-img-top" alt="' . $album['titolo'] . '">';
+            echo '<div class="card-body">';
+            echo '<h5 class="card-title">' . $album['titolo'] . '</h5>';
+            echo '<p class="card-text">' . $album['artista'] . '</p>';
+            echo '</div>';
+            echo '<div class="card-body">';
+            echo '<p class="card-text">' . $album['anno_pubblicazione'] . '</p>';
+            echo '<p class="card-text">' . $album['genere'] . '</p>';
+            echo '</div>';
+            echo '</div>';
+          }
+          ?>
         </div>
       </div>
     </div>
