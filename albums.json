@@ -1,0 +1,44 @@
+[
+  {
+    "titolo": "The Dark Side of the Moon",
+    "artista": "Pink Floyd",
+    "url_cover": "https://legendarycover.it/wp-content/uploads/2019/06/thedarksideofthemoon-e1559419433695.jpg",
+    "anno_pubblicazione": 1973,
+    "genere": "Progressive Rock"
+  },
+  {
+    "titolo": "Thriller",
+    "artista": "Michael Jackson",
+    "url_cover": "https://legendarycover.it/wp-content/uploads/2019/01/thriller-michael-jackson-copertina-e1548770138210.jpg",
+    "anno_pubblicazione": 1982,
+    "genere": "Pop"
+  },
+  {
+    "titolo": "Abbey Road",
+    "artista": "The Beatles",
+    "url_cover": "https://legendarycover.it/wp-content/uploads/2020/04/abbey_road_beatles.jpg",
+    "anno_pubblicazione": 1969,
+    "genere": "Rock"
+  },
+  {
+    "titolo": "Dangerous",
+    "artista": "Michael Jackson",
+    "url_cover": "https://legendarycover.it/wp-content/uploads/2019/01/dangerous-e1546725055608.jpg",
+    "anno_pubblicazione": 1991,
+    "genere": "New Jack Swing"
+  },
+  {
+    "titolo": "The Wall",
+    "artista": "Pink Floyd",
+    "url_cover": "https://legendarycover.it/wp-content/uploads/2018/09/the-wall-originale-harvest-front-cover-e1536142925520.jpg",
+    "anno_pubblicazione": 1979,
+    "genere": "Progressive Rock"
+  },
+  {
+    "titolo": "Physical Graffiti",
+    "artista": "Led Zeppelin",
+    "url_cover": "https://legendarycover.it/wp-content/uploads/2018/12/1.physical-graffiti-frontcover-esterna.jpg",
+    "anno_pubblicazione": 1975,
+    "genere": "Hard rock"
+  },
+]
