@@ -14,6 +14,22 @@
   <body>
     <div class="container">
       <h1 class="text-center m-4">Albums</h1>
+      <h5>Aggiungi il tuo album!</h5>
+  
+      <form action="server.php" method="post" class="d-flex flex-column">
+        <label for="titolo">Titolo del disco</label>
+        <input type="text" name="titolo" id="titolo" placeholder="Titolo">
+        <label for="url_cover">URL Cover</label>
+        <input type="text" name="url_cover" id="url_cover" placeholder="url_cover">
+        <label for="artista">Artista</label>
+        <input type="text" name="artista" id="artista" placeholder="Artista">
+        <label for="genere">Genere</label>
+        <input type="text" name="genere" id="genere" placeholder="Genere">
+        <label for="anno_pubblicazione">Anno di Pubblicazione</label>
+        <input type="number" name="anno_pubblicazione" id="anno_pubblicazione" placeholder="Anno" min="1860" max="<?php echo date('Y') ?>">
+        <button type="submit">Conferma</button>
+      </form>
+
       <div class="d-flex justify-content-center">
         <div class="row g-4 justify-content-center">
           <?php
